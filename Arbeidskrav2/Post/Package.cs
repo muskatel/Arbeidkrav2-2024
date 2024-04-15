@@ -3,12 +3,13 @@ namespace Arbeidskrav2.Post;
 public class Package
 {
     
-    public string description { get; set; }
+    public string Description { get; set; }
+    public int Weight { get; set; }
     private List<int> dimensions;
 
     public Package(string description, List<int> dimensions)
     {
-        this.description = description;
+        this.Description = description;
         this.Dimensions = dimensions;
     }
 
@@ -27,6 +28,6 @@ public class Package
 
     public override string ToString()
     {
-        return description + ": " + dimensions[0] + " " + dimensions[1] + " " + dimensions[2];
+        return Description + "\n" + dimensions[0] + "mm x " + dimensions[1] + "mm x " + dimensions[2] + "mm - " + Weight+ "g";
     }
 }

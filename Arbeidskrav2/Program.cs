@@ -28,10 +28,16 @@ Console.WriteLine("Loaded packages:");
 foreach (Package p in pc.packages)
 {
     Console.WriteLine(p.ToString());
+    
+    // Spec-2: Find best packing option
+    Packing pack = new Packing(p);
+    Console.WriteLine(pack);
+    Console.WriteLine("");
 }
 
 
-// Spec-2: Find best packing option
+
+
 
 // Spec-3: Find the best postage option
 
