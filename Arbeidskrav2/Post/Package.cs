@@ -28,6 +28,6 @@ public class Package
 
     public override string ToString()
     {
-        return Description + "\n" + dimensions[0] + "mm x " + dimensions[1] + "mm x " + dimensions[2] + "mm - " + Weight+ "g";
+        return Description;//  + "\n"  + dimensions[0] + "mm x " + dimensions[1] + "mm x " + dimensions[2] + "mm - " + Weight+ "g";
     }
 }
