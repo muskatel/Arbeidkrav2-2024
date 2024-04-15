@@ -13,12 +13,16 @@ public class Package
         this.Dimensions = dimensions;
     }
 
+    /// <summary>
+    /// Returns the dimension of the item in descending order of sizes.
+    /// </summary>
     public List<int> Dimensions
     {
         get => dimensions;
         set
         {
             // Sort values after we create a package
+            // This helps further down the line when comparing packing options
             dimensions = value;
             dimensions.Sort();
             dimensions.Reverse();

@@ -18,12 +18,16 @@ public class Packing
         set => dimensions = value;
     }
 
+    /// <summary>
+    /// Creates a packed item.
+    /// </summary>
+    /// <param name="package"> The item to be packed</param>
     public Packing(Package package)
     {
         this.package = package;
         this.Weight = package.Weight;
 
-        Expand();
+        FindPackingSolution();
     }
 
     public override string ToString()
@@ -31,7 +35,10 @@ public class Packing
         return PackingDescription /* + " - " + Weight*/ + "g (Price: "+ Price.ToString("C",CultureInfo.CreateSpecificCulture("no-NB")) + ")";
     }
 
-    private void Expand()
+    /// <summary>
+    /// Finds the 'best' packing soltuion based ont eh weight and dimesnions of the item.
+    /// </summary>
+    private void FindPackingSolution()
     {
         //TODO: refactor by placing package options into a collection and select best from list
         

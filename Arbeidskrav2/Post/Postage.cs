@@ -20,6 +20,9 @@ public class Postage
         return Description + " (Price: " + PostageCost.ToString("C",CultureInfo.CreateSpecificCulture("no-NB")) + ")";
     }
 
+    /// <summary>
+    /// Finds the 'best' postage option based on the weight and dimension of the packed item.
+    /// </summary>
     private void CalculatePostage()
     {
         if (packing.Weight <= 350 &&
