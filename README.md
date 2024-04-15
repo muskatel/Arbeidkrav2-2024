@@ -6,13 +6,13 @@ This is a sample sopltuion for the Arbeidskrav 2 (Emne 4 - 2024)
 
 Your system must do the following:
 ### Spec-1
-Given a JSON file (such as `items.json`), the system must read the data into memory as an appropriate object. See [[Arbeidskrav 2#Appendix 2 json data example]]
+Given a JSON file (such as `items.json`), the system must read the data into memory as an appropriate object.
 
 >Note: `items.json` will valid json. There is a sample provided but the final submission will be tested on unknown data.
 ### Spec-2
-For each item the system must calculate the best **packing** option (based on raw weight and dimensions) See [[Arbeidskrav 2#Appendix 1 Packing and Postage rates]]
+For each item the system must calculate the best **packing** option (based on raw weight and dimensions)
 ### Spec-3
-For each item the system must calculate the best **postage** option using the new weight and dimension after packing. See [[Arbeidskrav 2#Appendix 1 Packing and Postage rates]]
+For each item the system must calculate the best **postage** option using the new weight and dimension after packing.
 ### Spec-4
 The system must create a summarised shopping list of items to purchase.
 
